@@ -47,6 +47,12 @@ header{
     color: white;
 }
 
+
+#wigetta{
+    height: 360 ;
+    width: 243 ;
+    
+}
 nav{
     
     background-color: #416DF8;
@@ -109,6 +115,7 @@ main{
     'item2 item2 item 2'
     ;
     background-color: #41B3F8;
+    
 }
 
 .container_libros_atemporales{
