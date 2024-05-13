@@ -1,0 +1,145 @@
+
+body{
+    position: relative;
+    padding-bottom: 19em;
+    min-height: 100vh;
+    background-color: #E3DAB8;
+}
+
+header{
+    padding:10px;
+    width: 200vh;
+    top:0px;
+    left:0px;
+    position:fixed;
+    z-index: 50;
+    background-color: #416DF8;
+}
+
+.titulo{
+    font-size: 32;
+    margin-left: 100;
+}
+
+nav{
+    
+    background-color: #416DF8;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10px;
+    width: 200vh;
+}
+
+
+.menu{
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    margin-top: 180px;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    height:200vh;
+    grid-template-areas:
+    'mas_vendidos'
+    'atemporales'
+    'recomendados';
+}
+
+.mas_vendidos{
+    grid-area:mas_vendidos;
+    margin:10px;
+    padding:10px;
+}
+
+.atemporales{
+    grid-area:atemporales;
+    margin:10px;
+    padding:10px;
+}
+
+.recomendados{
+    grid-area:recomendados;
+    margin:10px;
+    padding:10px;
+}
+
+.item2{
+    margin:30px;
+    padding:30px;
+    background-color: red;
+}
+.container_libros_vendidos{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    border:2px solid;
+    height: 530px;
+    border-color: #41B3F8;
+    grid-template-areas:
+    'item2 item2 item 2'
+    ;
+    background-color: #41B3F8;
+}
+
+.container_libros_atemporales{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    border:2px solid;
+    height: 530px;
+    border-color: #59DED8;
+    grid-template-areas:
+    'item2 item2 item 2'
+    ;
+    background-color: #59DED8;
+}
+
+.container_libros_recomendados{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 530px;
+    border:2px solid;
+    border-color:#4FE5A8;
+    grid-template-areas:
+    'item2 item2 item 2'
+    ;
+    background-color: #4FE5A8;
+}
+
+
+
+
+
+
+
+
+
+
+.row{
+    background-color: #416DF8;
+    
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer{
+    
+    color: #000000;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px -2px 5px #b1b0b0;
+}
+
+.texto_pie{
+    color: white;
+}
+
+::-webkit-scrollbar {display: none;}
