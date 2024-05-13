@@ -107,7 +107,7 @@ main{
 .container_libros_vendidos{
     display:grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border:2px solid;
     height: 530px;
     border-color: #41B3F8;
@@ -121,7 +121,7 @@ main{
 .container_libros_atemporales{
     display:grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border:2px solid;
     height: 530px;
     border-color: #59DED8;
@@ -134,7 +134,7 @@ main{
 .container_libros_recomendados{
     display:grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 530px;
     border:2px solid;
     border-color:#4FE5A8;
