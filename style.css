@@ -101,8 +101,11 @@ main{
 }
 
 .item2{
+    display:grid;
+    
+    place-items: center;
     margin:30px;
-    padding:30px;
+    padding:5px;
     background-color: red;
 }
 .container_libros_vendidos{
@@ -113,7 +116,7 @@ main{
     height: 530px;
     border-color: #41B3F8;
     grid-template-areas:
-    'item2 item2 item 2'
+    'item2 item2 item 2 item 2'
     ;
    background-color: #41B3F8;
     
@@ -127,9 +130,9 @@ main{
     height: 530px;
     border-color: #59DED8;
     grid-template-areas:
-    'item2 item2 item 2'
+    'item2 item2 item 2 item 2'
     ;
-    background-color: #59DED8;
+    /* background-color: #59DED8; */
 }
 
 .container_libros_recomendados{
@@ -140,11 +143,15 @@ main{
     border:2px solid;
     border-color:#4FE5A8;
     grid-template-areas:
-    'item2 item2 item 2'
+    'item2 item2 item 2 item 2'
     ;
-    background-color: #4FE5A8;
+    /* background-color: #4FE5A8; */
 }
-
+img{
+    position:center;
+    width:80%;
+    height: 80%;
+}
 .row{
     background-color: #416DF8;
     
