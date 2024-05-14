@@ -33,12 +33,13 @@ body{
 
 header{
     padding:10px;
-    width: 184vh;
+    width: 100%;
     top:0px;
     left:0px;
     position:fixed;
     z-index: 50;
     background-color: #416DF8;
+    
 }
 
 .titulo{
@@ -114,7 +115,7 @@ main{
     grid-template-areas:
     'item2 item2 item 2'
     ;
-    /* background-color: #41B3F8; */
+   background-color: #41B3F8;
     
 }
 
