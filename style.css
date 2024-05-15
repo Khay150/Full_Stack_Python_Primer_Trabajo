@@ -106,7 +106,7 @@ main{
     place-items: center;
     margin:30px;
     padding:5px;
-    background-color: red;
+    background-color: #DC9D9B;
 }
 .container_libros_vendidos{
     display:grid;
@@ -118,7 +118,7 @@ main{
     grid-template-areas:
     'item2 item2 item 2 item 2'
     ;
-   background-color: #41B3F8;
+   
     
 }
 
