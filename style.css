@@ -28,7 +28,8 @@ body{
 
 #instagram{
     width: 50px;
-    margin-left: 1150;
+    margin-left: 950;
+    
 }
 
 header{
@@ -43,8 +44,10 @@ header{
 }
 
 .titulo{
+    position: relative;
     font-size: 40;
-    margin-left: 20;
+    top: 30;
+    margin-left: 40;
     color: white;
 }
 
@@ -65,6 +68,7 @@ nav{
 }
 
 main{
+    position:relative;
     margin-top: 180px;
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
@@ -77,6 +81,7 @@ main{
 }
 
 .mas_vendidos{
+    
     grid-area:mas_vendidos;
     margin:10px;
     padding:10px;
@@ -95,11 +100,7 @@ main{
 }
 
 .item2{
-    display:grid;
-    
-    place-items: center;
     margin:30px;
-    padding:5px;
     background-color: #DC9D9B;
 }
 .container_libros_vendidos{
@@ -107,7 +108,7 @@ main{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border:2px solid;
-    height: 530px;
+    height: 550px;
     border-color: #41B3F8;
     grid-template-areas:
     'item2 item2 item 2 item 2'
@@ -121,7 +122,7 @@ main{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border:2px solid;
-    height: 530px;
+    height: 550px;
     border-color: #59DED8;
     grid-template-areas:
     'item2 item2 item 2 item 2'
@@ -133,29 +134,41 @@ main{
     display:grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 530px;
+    height: 550px;
     border:2px solid;
     border-color:#4FE5A8;
     grid-template-areas:
     'item2 item2 item 2 item 2'
+  
     ;
     /* background-color: #4FE5A8; */
 }
 img{
-    position:center;
+    position: relative;
+    top:30px;
+    left:30px;
     width:80%;
     height: 80%;
 }
+
+.epigrafe{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+
+
 .row{
     background-color: #416DF8;
-    
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: 0;
+    top:330px;
     
 }
 
 footer{
+   
     color: #000000;
     font-size: 14px;
     display: flex;
