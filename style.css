@@ -67,12 +67,9 @@ nav{
 }
 
 main{
-<<<<<<< Updated upstream
     position:relative;
     margin-top: 180px;
-=======
     margin-top: 200px;
->>>>>>> Stashed changes
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
     grid-template-columns: 1fr;
