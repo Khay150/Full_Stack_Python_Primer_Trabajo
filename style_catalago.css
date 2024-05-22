@@ -1,7 +1,5 @@
 body{
     position: relative;
-    padding-bottom: 12em;
-    min-height: 100vh;
     background-color: #E3DAB8;
 }
 
@@ -76,24 +74,13 @@ nav{
 main{
     position:relative;
     margin-top: 220px;
+    margin-bottom: 0px;
     height:800vh;
     display: grid;
     grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
     grid-template-areas:
-    "seccion"
-    "seccion"
-    "seccion"
-    "seccion"
-    "seccion"
-    "seccion"
-    "seccion"
-    "seccion"
-    "seccion"
-    "seccion"
-    "seccion"
-    "seccion"
-    ;
+    "seccion";
 }
 
 section{
@@ -115,31 +102,15 @@ section img{
     position:relative;
     margin:50px 0px 10px 20px;
     grid-area: "imagen";
-    background-color: #416DF8;
+    width:80%;
+    height:160%;
 }
-.seccion{
-    grid-area: "texto";
-}
-/* section a{
-    grid-area: "texto";
-}
-section p{
-    grid-area: "texto";
-    background-color: aquamarine;
-} */
-
-
-
-
-
-
-
 
 .row{
     background-color: #416DF8;
     position: relative;
     width: 100%;
-    top:330px;
+    /* top:200px; */
     
 }
 
