@@ -153,12 +153,12 @@ main{
     margin-bottom: 1vh;
 }
 
-.seguridad, .devoluciones{
+.seguridad, .devoluciones, .envios{
     margin-top: 0vh;
     margin-left: 2vh;
 }
 
-.respuesta_seguridad, .respuesta_devoluciones{
+.respuesta_seguridad, .respuesta_devoluciones, .respuesta_envios{
     padding: 5px 20px 0px 50px;
     font-size: 18;
 }
@@ -167,6 +167,22 @@ main{
     text-decoration: none;
     color: #416DF8;
 }
+
+.tabla{
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto; 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th{
+    background-color: #CC7D74;
+}
+
 
 
 
