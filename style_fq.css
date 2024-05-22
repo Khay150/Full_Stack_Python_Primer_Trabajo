@@ -119,7 +119,6 @@ main{
 .local{
     position:center;
     width: 15vh;
-    
     display: block;
 }
 
@@ -131,12 +130,45 @@ main{
 }
 
 
-.respuesta{
+.respuesta_direccion{
     font-size: 18;
 }
 
-.iframe{
+.direccion{
     display: grid;
     place-items: center;
 }
+
+.centro, .medios_pagos{
+    margin-top: 0vh;
+    margin-left: 2vh;
+    padding: 0%;
+}
+.lista_medios_pagos{
+    list-style-type: circle;
+}
+
+.item_medios_pagos{
+    font-size: 18;
+    margin-bottom: 1vh;
+}
+
+.seguridad, .devoluciones{
+    margin-top: 0vh;
+    margin-left: 2vh;
+}
+
+.respuesta_seguridad, .respuesta_devoluciones{
+    padding: 5px 20px 0px 50px;
+    font-size: 18;
+}
+
+.link_formulario{
+    text-decoration: none;
+    color: #416DF8;
+}
+
+
+
+
 
