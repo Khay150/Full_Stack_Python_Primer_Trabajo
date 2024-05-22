@@ -76,14 +76,57 @@ nav{
 main{
     position:relative;
     margin-top: 220px;
-   
-    height:200vh;
+    height:800vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+    "seccion"
+    "seccion"
+    "seccion"
+    "seccion"
+    "seccion"
+    "seccion"
+    "seccion"
+    "seccion"
+    "seccion"
+    "seccion"
+    "seccion"
+    "seccion"
+    ;
+}
+
+section{
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    grid-area: "seccion";
+    display:grid;
+    background-color: #DC9D9B;
+    grid-template-columns: 20% 75%;
+    grid-template-rows: 30vh;
+    grid-template-areas:
+    "imagen texto";
+    
 }
 
 
-
-
-
+section img{
+    position:relative;
+    margin:50px 0px 10px 20px;
+    grid-area: "imagen";
+    background-color: #416DF8;
+}
+.seccion{
+    grid-area: "texto";
+}
+/* section a{
+    grid-area: "texto";
+}
+section p{
+    grid-area: "texto";
+    background-color: aquamarine;
+} */
 
 
 
