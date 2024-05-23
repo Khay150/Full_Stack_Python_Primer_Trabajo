@@ -41,7 +41,7 @@
 
     var validarCheckbox = function(e){
         var chequeado = false;
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 6; i++) {
             if (formulario.asunto[i].checked == true){
                 chequeado = true
             }
