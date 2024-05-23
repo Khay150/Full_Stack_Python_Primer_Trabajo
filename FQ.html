@@ -105,7 +105,7 @@
 
             <p class="respuesta_devoluciones">
                 A partir de la recepción de tu orden, tenés <strong>10 días corridos</strong> para poder realizar cambios o devoluciones. Podés solicitarla a través del 
-                <a class="link_formulario" href="#formulario"> <strong>formulario de contacto</strong></a>.
+                <a class="link_formulario" href="#form_contacto"> <strong>formulario de contacto</strong></a>.
             </p>
 
             <p class="respuesta_devoluciones">
@@ -181,8 +181,68 @@
 
         </section>
 
-    </main>
+        <section class="formulario_contacto" id="form_contacto">
 
+            <p class="pregunta">Formulario de Contacto</p>
+
+            <p> Por otros temas y consultas, utilizá el siguiente <strong>formulario de contacto.</strong> Seleccione el tema de su consulta en <strong>«Asunto».</strong></p>
+
+            <form action="" name="formulario" id="formulario" method="get">
+
+                <fieldset class="campo_formulario">
+            
+                    <span class="linea"> <input class="casilla" type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre:"> </span>
+            
+                    <span class="linea"> <input class="casilla" type="text" name="apellido" id="apellido" maxlength="30" placeholder="Apellido:"> </span>
+            
+                    <span class="linea"> <input class="casilla" type="text" name="mail" id="mail" maxlength="50" placeholder="Mail:"> </span>
+            
+            
+                    <span class="choice"> <label for="">Sexo: </label> </span>
+                    <span class="linea">
+                        <input type="radio" value="Hombre" name="sexo"> Hombre.
+                        <input type="radio" value="Mujer" name="sexo"> Mujer.
+                        <input type="radio" value="Otro" name="sexo"> Otro.
+                    </span>
+            
+                    <span class="choice"> <label for="">Asunto: </label> </span>   
+                    <span class="linea">
+                        <input type="checkbox" name="asunto" id="asunto"> Información sobre libros.
+            
+                        <input type="checkbox" name="asunto" id="asunto"> Mi compra online.
+            
+                        <input type="checkbox" name="asunto" id="asunto"> Reportar problemas o sugerencias.
+            
+                        <input type="checkbox" name="asunto" id="asunto"> Compras mayoristas.
+            
+                        <input type="checkbox" name="asunto" id="asunto"> Cancelaciones o devoluciones.
+            
+                        <input type="checkbox" name="asunto" id="asunto"> Otros.
+                    </span>
+            
+                    <span class="linea">
+                    <label for="">Tu mensaje: </label>
+                    <textarea  class="casilla" name="mensaje" id="mensaje" cols="75" rows="10" maxlength="770"></textarea>
+                    </span>
+            
+                    <span class="linea"> <input type="submit" id="btn" name="btn" value="Enviar"> </span>
+            
+                </fieldset>
+                
+            </form>
+            
+            <script src="validacion_formulario.js"></script>
+
+        </section>
+
+        <section class="row">
+            <footer>
+                <p class="texto_pie"> La Gata y la Luna | © 2013-2024 | Buenos Aires, Argentina</p>
+                <p class="texto_pie"> Todos los derechos reservados. </p>
+            </footer>
+        </section>
+
+    </main>
 
 
 </body>
