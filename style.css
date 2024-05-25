@@ -77,22 +77,25 @@
     .item2{
         margin:30px;
         background-color: #DC9D9B;
+        width: 200px;
+        height: 45vh;
     }
     .container_libros_vendidos{
         border:2px solid;
-        height: 550px;
-       
+        height: 100%;
+        border-color: #41B3F8;
     }
     
     .container_libros_atemporales{
         border:2px solid;
-        height: 550px;
+        height: 100%;
         border-color: #59DED8;
     }
     
     .container_libros_recomendados{
-        height: 550px;
+        height: 100%;
         border:2px solid;
+        border-color:#4FE5A8 ;
     }
     img{
         position: relative;
