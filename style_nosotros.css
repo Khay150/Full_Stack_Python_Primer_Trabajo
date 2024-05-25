@@ -23,11 +23,7 @@ body{
     margin-left: 23;
 }
 
-#instagram{
-    width: 50px;
-    margin-left: 950;
-    
-}
+
 
 
 
@@ -73,7 +69,7 @@ nav{
 }
 
 .información_nosotros{
-    margin-top: 300px;
+    margin-top: 250px;
     margin-left: 2vh;
 }
 
@@ -93,7 +89,50 @@ nav{
 
 .imagenes {
     display: flex;
-    gap: 50px; /* Espacio entre las imágenes */
+    gap: 40px; 
     height: 50%;
 }
 
+::-webkit-scrollbar {display: none;}
+
+
+.red1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#instagram {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nombre_red {
+    margin: 0;
+    font-size: 24;
+}
+.red2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#facebook {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.red3 {
+    display: flex;
+    align-items: center;
+}
+
+#mail {
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.talleres, .social{
+    margin-left: 2vh;
+}
