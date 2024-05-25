@@ -1,39 +1,184 @@
 
-body{
-    position: relative;
-    background-color: #E3DAB8;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-
-.encabezado{
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.banner{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap; 
-    align-items: center;
-}
-
-#logo_blanco{
-    width: 100px;
-    margin-left: 23;
-}
-
-#instagram{
-    width: 50px;
-    margin-left: 950;
+@media (max-width: 599px){
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    
+    #logo_blanco{
+        width: 100px;
+        
+    }
+    header{
+        display:flex;
+        flex-direction: column;
+        padding:10px;
+        width: 100%;
+        background-color: #416DF8;
+        justify-content: center;
+    }
+    .titulo{
+        color: white;
+        margin:30px;
+    }
+    nav{
+    
+        background-color: #416DF8;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        padding:10px;
+        width: 100%;
+    }
+    .menu{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .active{
+        color: #00DC14;
+    }
+    
+    main{
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .mas_vendidos{
+        
+        
+        margin:10px;
+        padding:10px;
+    }
+    
+    .atemporales{
+        
+        margin:10px;
+        padding:10px;
+    }
+    
+    .recomendados{
+        
+        margin:10px;
+        padding:10px;
+    }
+    
+    .item2{
+        margin:30px;
+        background-color: #DC9D9B;
+        width: 200px;
+        height: 45vh;
+    }
+    .container_libros_vendidos{
+        border:2px solid;
+        height: 100%;
+        border-color: #41B3F8;
+    }
+    
+    .container_libros_atemporales{
+        border:2px solid;
+        height: 100%;
+        border-color: #59DED8;
+    }
+    
+    .container_libros_recomendados{
+        height: 100%;
+        border:2px solid;
+        border-color:#4FE5A8 ;
+    }
+    img{
+        position: relative;
+        top:30px;
+        left:30px;
+        width:80%;
+        height: 80%;
+    }
+    
+    .epigrafe{
+        position: relative;
+        top: 20px;
+        text-align: center;
+    }
+    
+    
+    
+    .row{
+        background-color: #416DF8;
+        position: relative;
+        width: 100%;
+        top:150px;
+        
+    }
+    
+    footer{
+       
+        color: #000000;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0px -2px 5px #b1b0b0;
+    }
+    
+    .texto_pie{
+        color: white;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    ::-webkit-scrollbar {display: none;}
+        
+}
+
+@media (min-width:600px) and (max-width:1199px){
 }
 
 
 
+@media (min-width:1200px){
+    body{
+        position: relative;
+        background-color: #E3DAB8;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .encabezado{
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .banner{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap; 
+        align-items: center;
+    }
+    
+    #logo_blanco{
+        width: 100px;
+        margin-left: 23;
+    }
+    
+    #instagram{
+        width: 50px;
+        margin-left: 950;
+        
+    }
 
-header{
+    header{
     padding:10px;
     width: 100%;
     top:0px;
@@ -191,3 +336,6 @@ footer{
 }
 
 ::-webkit-scrollbar {display: none;}
+    
+}
+
