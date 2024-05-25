@@ -5,71 +5,61 @@ body{
 }
 
 
-.encabezado{
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.banner{
+.banner {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap; 
     align-items: center;
 }
 
-#logo_blanco{
-    position: relative;
-    top: 30px;
-    left: 40px;
+#logo_blanco {
     width: 100px;
-    margin-left: 23;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
-#instagram{
-    position:relative;
-
-    width: 50px;
-    left: 1100px;
-    
-}
-
-header{
-    padding:10px;
-    width: 100%;
-    top:0px;
-    left:0px;
-    position:fixed;
-    z-index: 50;
-    background-color: #416DF8;
-    
-}
-
-.titulo{
-    position: relative;
-    font-size: 40;
-    top: 35px;
-    left: 50px;
+.titulo {
+    margin: 0;
+    font-size: 40px; /* Especifica la unidad */
     color: white;
 }
 
-
-
-nav{
-    
+header {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 50;
     background-color: #416DF8;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding:10px;
-    width: 180vh;
-    margin-top: 21px;
 }
 
+.header-container {
+    display: flex;
+    
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
 
-.menu{
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #416DF8;
+    width: 150vh;
+    margin-right: 100px;
+}
+
+.item {
+    margin-left: 20px;
+}
+
+.menu {
     color: #fff;
     text-decoration: none;
+}
+
+h1{
+    margin-left: 2vh;
 }
 
 .active{
@@ -78,7 +68,7 @@ nav{
 
 main{
     position:relative;
-    margin-top: 220px;
+    margin-top: 150px;
     margin-bottom: 0px;
     height:800vh;
     display: grid;
