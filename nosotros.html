@@ -9,24 +9,25 @@
 </head>
 <body>
     <header>
-        <div class="banner">
-            <div class="encabezado">
+
+        <div class="header-container">
+
+            <div class="banner">
                 <img src="Imagenes\logo_blanco.png" id="logo_blanco"> 
                 <h1 class="titulo">La gata y la Luna</h1>
-            </div>
-            
+            </div> 
+        
+            <nav>
+                <div class="item"><h2><a id="indexLink" class="menu" href="index.html" >Home</a></h2></div>
+                <div class="item"><h2><a id="catalogoLink" class="menu" href="Catalogo.html" >Catalogo</h2></a></div>
+                <div class="item"><h2><a id="nosotrosLink" class="menu" href="nosotros.html" >Nosotros</h2></a></div>
+                <div class="item"><h2><a id="FQLink" class="menu" href="FQ.html" >FAQ</h2></a></div>
+            </nav>
+
+            <script src="menu.js"></script> 
+
         </div>
         
-        
-        <nav>
-            <div class="item"><h2><a id="indexLink" class="menu" href="index.html" >Home</a></h2></div>
-            <div class="item"><h2><a id="catalogoLink" class="menu" href="Catalogo.html" >Catalogo</h2></a></div>
-            <div class="item"><h2><a id="nosotrosLink" class="menu" href="nosotros.html" >Nosotros</h2></a></div>
-            <div class="item"><h2><a id="FQLink" class="menu" href="FQ.html" >FAQ</h2></a></div>
-        </nav>
-
-        <script src="menu.js"></script>
-
     </header>
 
 
@@ -73,12 +74,18 @@
             </div>
 
             <div class="red3">
-                <img src="Imagenes\mail.png" id="mail">
+                <a href="mailto:lagataylalunalibros@gmail.com?subject=Consulta%20sobre%20productos&body=Hola,%20quisiera%20más%20información%20sobre%20sus%20productos."><img src="Imagenes\mail.png" id="mail"></a>
                 <p class="nombre_red">lagataylalunalibros@gmail.com </p>
             </div>
 
         </section>
 
+        <section class="row">
+            <footer>
+                <p class="texto_pie"> La Gata y la Luna | © 2013-2024 | Buenos Aires, Argentina</p>
+                <p class="texto_pie"> Todos los derechos reservados. </p>
+            </footer>
+        </section>
 
     </main>
 
