@@ -1,6 +1,11 @@
 
 
 @media (max-width: 599px){
+    body{
+        position: relative;
+        background-color: #E3DAB8;
+        font-family: Arial, Helvetica, sans-serif;
+    }
     .encabezado{
         display: flex;
         flex-direction: column;
@@ -56,8 +61,6 @@
     }
     
     .mas_vendidos{
-        
-        
         margin:10px;
         padding:10px;
     }
@@ -142,6 +145,192 @@
 }
 
 @media (min-width:600px) and (max-width:1199px){
+    body{
+        position: relative;
+        background-color: #E3DAB8;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .encabezado{
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .banner{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap; 
+        align-items: center;
+    }
+    
+    #logo_blanco{
+        position: relative;
+        width: 100px;
+        left: 4vw;
+    }
+    
+    header{
+    display: grid;
+    padding:10px;
+    width: 100%;
+    top:0px;
+    left:0px;
+    position: relative;
+    z-index: 50;
+    background-color: #416DF8;
+    
+    }
+
+.titulo{
+    position: relative;
+    font-size: 40;
+    top:30px;
+    left:5vw;
+    color: white;
+}
+
+nav{
+    
+    background-color: #416DF8;
+    display:inline-grid;
+    padding:10px;
+    width: 100%;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'item item'
+    'item item';
+    
+}
+
+.item{
+    grid-area: 'item';
+}
+.menu{
+    color: #fff;
+    text-decoration: none;
+}
+
+.active{
+    color: #00DC14;
+}
+
+main{
+    position:relative;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns: 100vw;
+    max-height: 400vh;
+    grid-template-areas:
+    'mas_vendidos'
+    'atemporales'
+    'recomendados';
+}
+
+.mas_vendidos{
+    grid-area:mas_vendidos;
+    margin:20px;
+    padding:10px;
+}
+
+.atemporales{
+    grid-area:atemporales;
+    margin:20px;
+    padding:10px;
+}
+
+.recomendados{
+    grid-area:recomendados;
+    margin:20px;
+    padding:10px;
+}
+
+.item2{
+    grid-area: 'item2';
+    margin:30px;
+    height: 50vw;
+    background-color: #DC9D9B;
+}
+.container_libros_vendidos{
+    height: 120vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'item2 item2'
+    'item2 item2';
+    border:2px solid;
+    border-color: #41B3F8;
+}
+
+.container_libros_atemporales{
+    height: 120vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'item2 item2'
+    'item2 item2';
+    border:2px solid;
+    border-color: #59DED8;
+    /* background-color: #59DED8; */
+}
+
+.container_libros_recomendados{
+    height: 120vw;
+    border:2px solid;
+    border-color:#4FE5A8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'item2 item2'
+    'item2 item2';
+    /* background-color: #4FE5A8; */
+}
+img{
+    position: relative;
+    top:30px;
+    left:30px;
+    width:80%;
+    height: 80%;
+}
+
+.epigrafe{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+
+
+.row{
+    background-color: #416DF8;
+    position: relative;
+    width: 100%;
+    top:85vw;
+    
+}
+
+footer{
+   
+    color: #000000;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px -2px 5px #b1b0b0;
+}
+
+.texto_pie{
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+::-webkit-scrollbar {display: none;}
 }
 
 
@@ -172,12 +361,6 @@
         margin-left: 23;
     }
     
-    #instagram{
-        width: 50px;
-        margin-left: 950;
-        
-    }
-
     header{
     padding:10px;
     width: 100%;
@@ -220,12 +403,11 @@ nav{
 
 main{
     position:relative;
-    margin-top: 180px;
     margin-top: 200px;
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    height:200vh;
+    height:250vh;
     grid-template-areas:
     'mas_vendidos'
     'atemporales'
@@ -315,7 +497,7 @@ img{
     background-color: #416DF8;
     position: relative;
     width: 100%;
-    top:150px;
+    
     
 }
 
