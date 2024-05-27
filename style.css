@@ -301,7 +301,7 @@ main{
     position: relative;
     width: 100%;
     top:85vw;
-    
+    margin-top: 0px;
 }
 
 footer{
