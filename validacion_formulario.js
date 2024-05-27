@@ -29,6 +29,34 @@
             }
         };    
 
+        var validarMail = function(e){
+            var mail_ingresado = formulario.mail.value;
+            if (mail_ingresado == 0){
+                alert("Ingrese un mail valido");
+                e.preventDefault();
+                }
+            var mail_arroba = false;
+            var mail_dominio = false;
+            for (var i = 0; i < mail_ingresado.length; i++) {
+                if (mail_ingresado[i] == "@" && i != 0) {
+                    mail_arroba = true;
+                }
+                else if (mail_ingresado[i] == "." && mail_arroba && i < (mail_ingresado.length-1)){
+                    mail_dominio = true;
+                }
+            }
+            if (!mail_arroba || !mail_dominio) {
+                alert("Ingrese un mail valido");
+                e.preventDefault();
+            }
+            else{
+                if (c > 50){
+                    alert("apellido extenso");
+                    e.preventDefault();
+                    }
+                }
+            };    
+
     var validarRadio = function(e){
         if (formulario.sexo[0].checked == true ||
             formulario.sexo[1].checked == true || formulario.sexo[2].checked == true){
@@ -63,6 +91,7 @@
     var validar = function(e){
         validarNombre(e);
         validarApellido(e);
+        validarMail(e);
         validarRadio(e);
         validarCheckbox(e);
         validarTextbox(e);
