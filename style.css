@@ -211,7 +211,7 @@ main{
     position:relative;
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
-    grid-template-columns: 100vw;
+    grid-template-columns: 400vw;
     max-height: 400vh;
     grid-template-areas:
     'mas_vendidos'
