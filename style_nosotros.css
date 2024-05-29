@@ -83,14 +83,10 @@ nav {
 .imagenes {
     display: flex;
     gap: 40px; 
-<<<<<<< Updated upstream
-    height: 50%;
-=======
 }
 
-img{
+.fig{
     width: 23%;
->>>>>>> Stashed changes
 }
 
 ::-webkit-scrollbar {display: none;}
