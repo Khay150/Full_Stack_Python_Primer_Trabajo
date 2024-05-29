@@ -2,13 +2,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     var currentPage = window.location.pathname.split("/").pop(); // Obtener el nombre del archivo actual
 
-    var paginas = ["index.html", "Catalogo.html", "nosotros.html", "FQ.html"]
-    var ids = ["indexLink", "catalogoLink", "nosotrosLink", "FQLink"]
+    var links = document.querySelectorAll("nav a");
 
-    
-    for (var i = 0; i < 4; i++) {
-        if (paginas[i] == currentPage){
-            document.getElementById(ids[i]).classList.add("active");
+    links.forEach(function(link) {
+        // Comprobar si el href del enlace coincide con la página actual
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
         }
-    }
+    });
 });
