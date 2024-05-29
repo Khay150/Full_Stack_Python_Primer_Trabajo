@@ -69,7 +69,7 @@ nav {
 
 
 .pregunta{
-    font-size: 48;
+    font-size: 48px;
     margin-bottom: 20;
 }
 
@@ -83,7 +83,14 @@ nav {
 .imagenes {
     display: flex;
     gap: 40px; 
+<<<<<<< Updated upstream
     height: 50%;
+=======
+}
+
+img{
+    width: 23%;
+>>>>>>> Stashed changes
 }
 
 ::-webkit-scrollbar {display: none;}
