@@ -99,7 +99,7 @@ main{
 }
 
 .centro_ayuda{
-    font-size: 72;
+    font-size: 72px;
     text-align: center;
 }
 
@@ -124,7 +124,7 @@ main{
 ::-webkit-scrollbar {display: none;}
 
 .pregunta{
-    font-size: 48;
+    font-size: 48px;
     margin-bottom: 20;
 }
 

@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    var currentPage = "/" + window.location.pathname.split("/").pop(); // Obtener el nombre del archivo actual
+    var currentPage = window.location.pathname.split("/").pop(); // Obtener el nombre del archivo actual
 
     var links = document.querySelectorAll("nav a");
 
@@ -11,4 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+var currentPage = window.location.pathname.split("/").pop();
+console.log(currentPage)
+
+var links = document.querySelectorAll("nav a");
+links.forEach(function(link) {
+   
+    console.log(link.getAttribute("href"))
+    });
 
