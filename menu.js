@@ -11,3 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+var currentPage = window.location.pathname.split("/").pop();
+console.log(currentPage)
