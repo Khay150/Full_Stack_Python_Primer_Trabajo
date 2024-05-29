@@ -12,5 +12,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-var currentPage = window.location.pathname.split("/").pop();
+var currentPage = window.location.pathname.split("/").pop() + ".html";
 console.log(currentPage)
