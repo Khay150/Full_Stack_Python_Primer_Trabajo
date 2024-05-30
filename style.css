@@ -336,7 +336,7 @@ footer{
     .banner {
         display: flex;
         align-items: center;
-        animation: rubberBand 4s 1;
+        animation: lightSpeedInLeft 2s 1;
     }
 
     #logo_blanco {
