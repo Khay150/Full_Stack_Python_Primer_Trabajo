@@ -430,13 +430,14 @@ footer{
     .item2{
         margin:30px;
         background-color: #DC9D9B;
+        height: 530px;
     }
     .container_libros_vendidos{
         display:grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         border:2px solid;
-        height: 550px;
+        height: 590px;
         border-color: #41B3F8;
         grid-template-areas:
         'item2 item2 item 2 item 2'
@@ -450,7 +451,7 @@ footer{
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         border:2px solid;
-        height: 550px;
+        height: 590px;
         border-color: #59DED8;
         grid-template-areas:
         'item2 item2 item 2 item 2'
@@ -462,7 +463,7 @@ footer{
         display:grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        height: 550px;
+        height: 590px;
         border:2px solid;
         border-color:#4FE5A8;
         grid-template-areas:
