@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centro de ayuda- La Gata y la Luna</title>
-    <link rel="icon" type="image/x-icon" href="Imagenes/logo_oficial.png" alt="icono">
+    <link rel="icon" type="image/x-icon" href="Imagenes/logo_oficial.png">
     <link rel="stylesheet" href="style_fq.css">
 </head>
 <body>
@@ -43,6 +43,8 @@
                 </div>
                 <div class="item_consulta"><img src="Imagenes/contacto.png" alt="Crepusculo" class="imagen_consulta">
                     <p class="info">Para consultas por compras en proceso o sobre cómo comprar, contactanos al <strong> (54) 011 4703-4855 </strong> durante el horario de atencion (indicando tu numero de compra)</p>
+            
+                </div>
             </div>
         </section>
 
@@ -57,11 +59,10 @@
             <p class="pregunta">
                 Medios de pago
             </p>
-            <p class="respuesta_direccion">
-                <h1>
+                <h1 class="respuesta_direccion">
                     ¿Cuáles son las formas de pago habilitadas?
                 </h1>
-            </p>
+
             <ul class="lista_medios_pagos">
                 <li class="item_medios_pagos">
                     <strong>Depósito o transferencia en nuestra cuenta bancaria:</strong> luego de realizar tu pedido, recibirás un correo electrónico con los datos necesarios para efectuar el pago.
@@ -192,7 +193,7 @@
 
             <p> Por otros temas y consultas, utilizá el siguiente <strong>formulario de contacto.</strong> Seleccione el tema de su consulta en <strong>«Asunto».</strong></p>
 
-            <form action="" name="formulario" id="formulario" method="get">
+            <form name="formulario" id="formulario" method="get">
 
                 <fieldset class="campo_formulario">
             
@@ -203,30 +204,30 @@
                     <span class="linea"> <input class="casilla" type="text" name="mail" id="mail" maxlength="50" placeholder="Mail:"> </span>
             
             
-                    <span class="choice"> <label for="">Sexo: </label> </span>
+                    <span class="choice"> <label>Sexo: </label> </span>
                     <span class="linea">
                         <input type="radio" value="Hombre" name="sexo"> Hombre.
                         <input type="radio" value="Mujer" name="sexo"> Mujer.
                         <input type="radio" value="Otro" name="sexo"> Otro.
                     </span>
             
-                    <span class="choice"> <label for="">Asunto: </label> </span>   
+                    <span class="choice"> <label>Asunto: </label> </span>   
                     <span class="linea">
-                        <input type="checkbox" name="asunto" id="asunto"> Información sobre libros.
+                        <input type="checkbox" name="asunto" id="asunto1"> Información sobre libros.
             
-                        <input type="checkbox" name="asunto" id="asunto"> Mi compra online.
+                        <input type="checkbox" name="asunto" id="asunto2"> Mi compra online.
             
-                        <input type="checkbox" name="asunto" id="asunto"> Reportar problemas o sugerencias.
+                        <input type="checkbox" name="asunto" id="asunto3"> Reportar problemas o sugerencias.
             
-                        <input type="checkbox" name="asunto" id="asunto"> Compras mayoristas.
+                        <input type="checkbox" name="asunto" id="asunto4"> Compras mayoristas.
             
-                        <input type="checkbox" name="asunto" id="asunto"> Cancelaciones o devoluciones.
+                        <input type="checkbox" name="asunto" id="asunto5"> Cancelaciones o devoluciones.
             
-                        <input type="checkbox" name="asunto" id="asunto"> Otros.
+                        <input type="checkbox" name="asunto" id="asunto6"> Otros.
                     </span>
             
                     <span class="linea">
-                    <label for="">Tu mensaje: </label>
+                    <label>Tu mensaje: </label>
                     <textarea  class="casilla" name="mensaje" id="mensaje" cols="75" rows="10" maxlength="770"></textarea>
                     </span>
             
