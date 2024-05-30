@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     links.forEach(function(link) {
         // Comprobar si el href del enlace coincide con la página actual
-        if (link.getAttribute("href") === currentPage) {
+        if ( link.getAttribute("href").replace("/","") === currentPage) {
             link.classList.add("active");
         }
     });
