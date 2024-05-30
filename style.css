@@ -212,8 +212,7 @@ main{
     position:relative;
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
-    grid-template-columns: 400vw;
-    max-height: 400vh;
+    grid-template-columns: 100vw;
     grid-template-areas:
     'mas_vendidos'
     'atemporales'
@@ -241,11 +240,11 @@ main{
 .item2{
     grid-area: 'item2';
     margin:30px;
-    height: 50vw;
+    max-height: 55vw;
     background-color: #DC9D9B;
 }
 .container_libros_vendidos{
-    height: 120vw;
+    height: 125vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -257,7 +256,7 @@ main{
 }
 
 .container_libros_atemporales{
-    height: 120vw;
+    height: 125vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -270,7 +269,7 @@ main{
 }
 
 .container_libros_recomendados{
-    height: 120vw;
+    height: 125vw;
     border:2px solid;
     border-color:#4FE5A8;
     display: grid;
@@ -301,7 +300,6 @@ main{
     background-color: #416DF8;
     position: relative;
     width: 100%;
-    top:85vw;
     margin-top: 0px;
 }
 
