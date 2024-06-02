@@ -126,3 +126,7 @@ footer{
 }
 
 ::-webkit-scrollbar {display: none;}
+
+#Universo_Wigetta {
+    scroll-margin-top: 0; /* Añadir si hay algún margen en el diseño */
+}
