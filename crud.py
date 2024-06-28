@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template
+from flaskext.mysql import MySQL
 
 # Creamos la aplicación
 app = Flask(__name__)
