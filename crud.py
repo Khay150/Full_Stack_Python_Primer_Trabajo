@@ -19,6 +19,7 @@ def Catalogo():
 def Nosotros():
     return render_template(
         'nosotros.html')
+
 @app.route('/FQ.html')
 def FAQ():
     return render_template(
