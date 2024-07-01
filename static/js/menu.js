@@ -2,6 +2,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     var currentPage = window.location.pathname.split("/").pop(); // Obtener el nombre del archivo actual
 
+    if (currentPage == "") {
+        currentPage = "index.html"
+    }
+
     var links = document.querySelectorAll("nav a");
 
     links.forEach(function(link) {
@@ -10,4 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
             link.classList.add("active");
         }
     });
+
+
 });
