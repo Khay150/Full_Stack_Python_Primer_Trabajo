@@ -45,9 +45,11 @@ def FAQ():
     return render_template(
         'FQ.html')
 
+
 #pagina prueba
-@app.route('/prueba.html')
+@app.route('/create.html')
 def prueba():
+    '''
     # Creamos una variables que va a contener las consulta sql
     sql = "INSERT INTO `libros`.`catalogo` (`titulo_libro`, `titulo_original`, `autor`, `genero`, `publicacion`)\
          VALUES ('La Asistenta', 'The Housemaid', 'Freida McFadden', 'Thriller psicológico, Suspense', 2022); "
@@ -63,9 +65,9 @@ def prueba():
 
     # Commiteamos (Cerramos la conexion)
     conn.commit()
-
+    '''
     return render_template(
-        'prueba.html')
+        'create.html')
 
 
 

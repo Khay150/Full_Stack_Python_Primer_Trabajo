@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de ayuda- La Gata y la Luna</title>
+    <link rel="icon" type="image/x-icon" href="static\images\logo_oficial.png">
+    <link rel="stylesheet" href="static\css\style_create.css">
+</head>
+<body>
+    
+    <header>
+
+        <div class="header-container">
+
+            <div class="banner">
+                <img src="static\images\logo_blanco.png" id="logo_blanco" alt="logo"> 
+                <h1 class="titulo">La gata y la Luna</h1>
+            </div> 
+            
+            <nav>
+                <div class="item"><h2><a id="indexLink" class="menu" href="index.html" >Home</a></h2></div>
+                <div class="item"><h2><a id="catalogoLink" class="menu" href="Catalogo.html" >Catalogo</a></h2></div>
+                <div class="item"><h2><a id="nosotrosLink" class="menu" href="nosotros.html" >Nosotros</a></h2></div>
+                <div class="item"><h2><a id="FQLink" class="menu" href="FQ.html" >FAQ</a></h2></div>
+            </nav>
+
+            <script src="static\js\menu.js"></script> 
+
+        </div>
+        
+    </header>
+
+    <main>    
+
+        <section class="formulario_contacto" id="form_contacto">
+
+            <p class="pregunta">Formulario de Datos</p>
+
+            <p> Ingrese los datos que se desean agregar </p>
+
+            <form name="formulario" id="formulario" method="post" action="" enctype="multipart/form-data">
+
+                <fieldset class="campo_formulario">
+            
+                    <span class="linea"> <label>Titulo del libro: </label> </span>
+                    <span class="linea"> <input class="casilla" type="text" name="titulo_del_libro" id="titulo_del_libro" maxlength="30" placeholder="titulo del libro:"> </span>
+            
+                    <span class="linea"> <label>Titulo Original del libro: </label> </span>
+                    <span class="linea"> <input class="casilla" type="text" name="titulo_original" id="titulo_original" maxlength="30" placeholder="titulo original:"> </span>
+            
+                    <span class="linea"> <label>Autor/es: </label> </span>
+                    <span class="linea"> <input class="casilla" type="text" name="autor" id="autor" maxlength="50" placeholder="autor/es:"> </span>
+            
+                    <span class="linea"> <label>Género/s: </label> </span>
+                    <span class="linea"> <input class="casilla" type="text" name="mail" id="genero" maxlength="50" placeholder="genero:"> </span>
+                    
+                    <span class="linea"> <label>Año de publicación: </label> </span>
+                    <span class="linea"> <input class="casilla" type="number" name="publicacion" id="publicacion" maxlength="50" placeholder="publicacion:"> </span>
+            
+            
+                    <span class="linea"> <input type="submit" id="btn" name="btn" value="Enviar"> </span>
+            
+                </fieldset>
+                
+            </form>
+            
+            <script src="static\js\validacion_formulario.js"></script>
+
+        </section>
+
+        
+
+    </main>
+    <section class="row">
+                <footer>
+                    <p class="texto_pie"> La Gata y la Luna | © 2013-2024 | Buenos Aires, Argentina</p>
+                    <p class="texto_pie"> Todos los derechos reservados. </p>
+                </footer>
+            </section>
+
+</body>
+</html>
