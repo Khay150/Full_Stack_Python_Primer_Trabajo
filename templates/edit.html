@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de ayuda- La Gata y la Luna</title>
+    <link rel="icon" type="image/x-icon" href="..\static\images\logo_oficial.png">
+    <link rel="stylesheet" href="..\static\css\style_edit.css">
+</head>
+<body>
+    
+    <header>
+
+        <div class="header-container">
+
+            <div class="banner">
+                <img src="..\static\images\logo_blanco.png" id="logo_blanco" alt="logo"> 
+                <h1 class="titulo">La gata y la Luna</h1>
+            </div> 
+            
+            <nav>
+                <div class="item"><h2><a id="indexLink" class="menu" href="..\index.html" >Home</a></h2></div>
+                <div class="item"><h2><a id="catalogoLink" class="menu" href="..\Catalogo.html" >Catalogo</a></h2></div>
+                <div class="item"><h2><a id="nosotrosLink" class="menu" href="..\nosotros.html" >Nosotros</a></h2></div>
+                <div class="item"><h2><a id="FQLink" class="menu" href="..\FQ.html" >FAQ</a></h2></div>
+                <div class="item"><h2><a id="datosLink" class="menu" href="..\datos.html">Datos</a></h2></div>
+            </nav>
+
+            <script src="static\js\menu.js"></script> 
+
+        </div>
+        
+    </header>
+
+    <main>    
+
+        <section class="formulario_contacto" id="form_contacto">
+
+            <p class="pregunta">Formulario de Datos</p>
+
+            <p> Ingrese los datos que se desean agregar </p>
+
+            <fieldset class="campo_formulario">
+                {% for libro in d %}
+                <form method="post" action="/update" enctype="multipart/form-data">
+
+                    <span class="linea"><label>ID:</label></span>
+                    <span class="linea"><input class="casilla" type="text" value="{{ libro[0] }}"  name="txtID" id="txtID"></span>
+
+                    <span class="linea"><label>Título del libro:</label></span>
+                    <span class="linea"><input class="casilla" type="text" value="{{ libro[1] }}"  name="titulo_del_libro" id="titulo_del_libro"></span>
+
+                    <span class="linea"><label>Título Original del libro:</label></span>
+                    <span class="linea"><input class="casilla" type="text" value="{{ libro[2] }}"  name="titulo_original" id="titulo_original"></span>
+
+                    <span class="linea"><label>Autor/es:</label></span>
+                    <span class="linea"><input class="casilla" type="text" value="{{ libro[3] }}"  name="autor" id="autor"></span>
+
+                    <span class="linea"><label>Género/s:</label></span>
+                    <span class="linea"><input class="casilla" type="text" value="{{ libro[4] }}"  name="genero" id="genero"></span>
+
+                    <span class="linea"><label>Año de publicación:</label></span>
+                    <span class="linea"><input class="casilla" type="number" value="{{ libro[5] }}"  name="publicacion" id="publicacion"></span>
+
+                    <span class="linea"><input type="submit" id="btn" name="btn" value="Guardar Cambios"></span>
+                </form>
+                {% endfor %}
+            </fieldset>
+
+        </section>
+
+    </main>
+    <section class="row">
+        <footer>
+            <p class="texto_pie"> La Gata y la Luna | © 2013-2024 | Buenos Aires, Argentina</p>
+            <p class="texto_pie"> Todos los derechos reservados. </p>
+        </footer>
+    </section>
+
+</body>
+</html>

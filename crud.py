@@ -82,6 +82,40 @@ def destroy(id):
     conn.commit()
     return redirect(url_for('datos'))
 
+# Función para editar un registro
+@app.route('/edit/<int:id>')
+def edit(id):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM `libros`.`catalogo` WHERE id_libro=%s", (id))
+    datos = cursor.fetchall()
+    conn.commit()
+    return render_template('edit.html', d = datos)
+
+
+# Función para actualizar los datos de un registro
+@app.route('/update', methods=['POST'])
+def update():
+    
+    
+    _titulo = request.form['titulo_del_libro']
+    _titulo_original = request.form['titulo_original']
+    _autor = request.form['autor']
+    _genero = request.form['genero']
+    _publicacion = request.form['publicacion']
+    
+    id=request.form['txtID']
+    
+    
+    sql = "UPDATE `libros`.`catalogo` SET `titulo_libro`=%s, `titulo_original`=%s, `autor`=%s, `genero`=%s, `publicacion`=%s WHERE id_libro=%s;"
+    datos = (_titulo, _titulo_original, _autor, _genero, _publicacion, id)
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    cursor.execute(sql,datos)
+    conn.commit()
+    return redirect(url_for('datos'))
+
+
 # Create
 @app.route('/create')
 def create():
@@ -118,6 +152,13 @@ def storage():
 
     return redirect(url_for('datos'))
     
+
+
+#pagina catalogo
+@app.route('/prueba.html')
+def prueba():
+    return render_template('prueba.html')
+
 
 if (__name__=="__main__"):
     app.run(debug=True)

@@ -34,32 +34,39 @@
     </header>
 
     <main>
-        <table class="table table-light">
-            <thead class="thead-light">
-                <tr>
-                    <th>#</th>
-                    <th>Libro</th>
-                    <th>Título Original</th>
-                    <th>Autor/es</th>
-                    <th>Género/s</th>
-                    <th>Año de publicación</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for libro in c %}
-                <tr>
-                    <td>{{libro[0]}}</td>
-                    <td>{{libro[1]}}</td>
-                    <td>{{libro[2]}}</td>
-                    <td>{{libro[3]}}</td>
-                    <td>{{libro[4]}}</td>
-                    <td>{{libro[5]}}</td>
-                    <td>Editar | <a class="eliminar" href="/destroy/{{libro[0]}}">Eliminar</a> </td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <section class="BD">
+            <table class="table table-light">
+                <thead class="thead-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Libro</th>
+                        <th>Título Original</th>
+                        <th>Autor/es</th>
+                        <th>Género/s</th>
+                        <th>Año de publicación</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for libro in c %}
+                    <tr>
+                        <td>{{libro[0]}}</td>
+                        <td>{{libro[1]}}</td>
+                        <td>{{libro[2]}}</td>
+                        <td>{{libro[3]}}</td>
+                        <td>{{libro[4]}}</td>
+                        <td>{{libro[5]}}</td>
+                        <td> <a class="editar" href="/edit/{{libro[0]}}">Editar</a> | <a class="eliminar" href="/destroy/{{libro[0]}}">Eliminar</a> </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>    
+
+        <button class="full-width-button">
+            <a href="create" style="text-decoration: none; color: inherit;">Agregar Nuevos Datos</a>
+        </button>  
+
     </main>
     <section class="row">
         <footer>

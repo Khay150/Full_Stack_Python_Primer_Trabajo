@@ -122,3 +122,26 @@ footer{
     color: #ab2525;
     text-decoration: none;
 }
+
+.editar{
+    color: #1b99a4;
+    text-decoration: none;
+}
+
+.full-width-button {
+    background-color: #D4CAE1;
+    width: 100%;
+    padding: 10px 0; /* Ajusta el padding según necesites */
+    border: none;
+    text-align: center;
+    margin-top: 20px; /* Espacio arriba del botón */
+    box-sizing: border-box; /* Para que el padding no incremente el ancho total */
+    border: 2px solid #abb8bc;
+}
+
+.full-width-button a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2em; /* Tamaño de fuente del texto del botón */
+}
