@@ -56,55 +56,16 @@ nav {
     text-decoration: none;
 }
 
-
 main{
-    margin-top: 100px;
+    margin-top: 150px;
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    min-height: 83vh;
+    min-height: 77.5vh;
     display: flex;
     flex-direction: column;
     
 }
-
-.pregunta{
-    font-size: 48px;
-    margin-bottom: 20;
-}
-
-.formulario_contacto{
-    margin-top: 0vh;
-    margin-left: 2vh;
-}
-
-.campo_formulario{
-    width: 80%; /* Ancho del fieldset */
-    max-width: 600px; /* Ancho máximo del fieldset */
-    padding: 20px; /* Espacio interno (padding) */
-    /*margin: 0 auto;  Centrar el fieldset */
-    border: 2px solid #000; /* Borde del fieldset */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border-color: #416DF8;
-}
-
-.linea {
-    display: block;
-    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
-}
-
-.choice{
-    display: block;
-    margin-bottom: 10px; 
-}
-
-
-.casilla{
-    background-color: #FFF5CF;
-    border-width: 2;
-}
-
 
 footer{
    
@@ -129,4 +90,35 @@ footer{
     top: 20px;
     
 }
-::-webkit-scrollbar {display: none;}
+
+.table {
+    border: 2px solid #abb8bc; /* Borde sólido de 2px de ancho con color azul */
+    border-collapse: collapse; /* Colapsar los bordes para evitar espacios entre celdas */
+    width: 100%; /* Opcional: Ancho completo de la tabla */
+}
+
+.active{
+    color: #00DC14;
+}
+
+/* Estilos para las celdas `<td>` y encabezados `<th>` */
+
+.table td {
+    border: 1px solid #ddd; /* Borde de 1px sólido con color gris claro */
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+    background-color: #E1D8D2;
+}
+
+.table th{
+    background-color: #D4CAE1;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #abb8bc; /* Borde de 1px sólido con color gris claro */
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.eliminar{
+    color: #ab2525;
+    text-decoration: none;
+}

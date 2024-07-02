@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template
+from flask import render_template, request, redirect, url_for
 from flaskext.mysql import MySQL
 
 # Creamos la aplicación
@@ -14,8 +14,6 @@ app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 # Indicamos el usuario
 app.config['MYSQL_DATABASE_USER'] = 'root'
 
-
-
 # Nombre de nuestra BD
 app.config['MYSQL_DATABASE_BD'] = 'libros'
 
@@ -26,52 +24,100 @@ mysql.init_app(app)
 # Proporcionamos la ruta a la raiz del sitio
 @app.route('/')
 def index():
-    return render_template(
-        'index.html')
+    
+    return render_template('index.html')
+
+@app.route('/index.html')
+def redirect_to_index():
+    return redirect(url_for('index'))
+
 #pagina catalogo
 @app.route('/Catalogo.html')
 def Catalogo():
-    return render_template(
-        'Catalogo.html')
+    return render_template('Catalogo.html')
+
 
 #pagina notalogo
 @app.route('/nosotros.html')
 def Nosotros():
-    return render_template(
-        'nosotros.html')
+    return render_template('nosotros.html')
+
+
 #pagina FAQ
 @app.route('/FQ.html')
 def FAQ():
-    return render_template(
-        'FQ.html')
+    return render_template('FQ.html')
 
+#pagina con la BD
+@app.route('/datos.html')
+def datos():
+    sql = "SELECT * FROM `libros`.`catalogo`;"
 
-#pagina prueba
-@app.route('/create.html')
-def prueba():
-    '''
-    # Creamos una variables que va a contener las consulta sql
+    # Nos conectamos a la base de datos
+    conn = mysql.connect()
+    # Sobre el cursor vamos a realizar las operaciones
+    cursor = conn.cursor()
+    # Ejecutamos la sentencia SQL sobre el cursor
+    cursor.execute(sql)
+    # Copiamos el contenido del cursor a una variable
+    db_libros = cursor.fetchall()
+    # y mostramos las tuplas por la terminal
+    print("-"*60)
+    for libro in db_libros:
+        print(libro)
+    print("-"*60)
+
+    # "Commiteamos" (Cerramos la conexión)
+    conn.commit()
+    # Devolvemos código HTML para ser renderizado
+    return render_template('datos.html', c = db_libros)
+
+# Destroy
+# Función para eliminar un registro
+@app.route('/destroy/<int:id>')
+def destroy(id):
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM `libros`.`catalogo` WHERE id_libro=%s", (id))
+    conn.commit()
+    return redirect(url_for('datos'))
+
+# Create
+@app.route('/create')
+def create():
+    return render_template('create.html')
+
+# Store
+@app.route('/store', methods =['POST'])
+def storage():
+    # Recibimos los valores del formulario:
+    _titulo = request.form['titulo_del_libro']
+    _titulo_original = request.form['titulo_original']
+    _autor = request.form['autor']
+    _genero = request.form['genero']
+    _publicacion = request.form['publicacion']
+
+    # Armamos una tupla con los valores
+    datos = (_titulo, _titulo_original, _autor, _genero, _publicacion)
+
+    # Armamos la sentencia SQL que almacena eso datos en la BD
     sql = "INSERT INTO `libros`.`catalogo` (`titulo_libro`, `titulo_original`, `autor`, `genero`, `publicacion`)\
-         VALUES ('La Asistenta', 'The Housemaid', 'Freida McFadden', 'Thriller psicológico, Suspense', 2022); "
-    
-    # Conectamos a la conexion mysql.init_app(app)
+         VALUES (%s, %s, %s, %s, %s);"
+
+    # Conectamos a la BD
     conn = mysql.connect()
 
-    # Almacenamos lo que devuelva la consulta
+    # Creamos el cursor
     cursor = conn.cursor()
 
     # Ejecutamos la sentencia SQL
-    cursor.execute(sql)
+    cursor.execute(sql, datos)
 
     # Commiteamos (Cerramos la conexion)
     conn.commit()
-    '''
-    return render_template(
-        'create.html')
 
-
-
-
+    return redirect(url_for('datos'))
+    
 
 if (__name__=="__main__"):
     app.run(debug=True)
