@@ -61,12 +61,13 @@ def datos():
     cursor.execute(sql)
     # Copiamos el contenido del cursor a una variable
     db_libros = cursor.fetchall()
+    '''
     # y mostramos las tuplas por la terminal
     print("-"*60)
     for libro in db_libros:
         print(libro)
     print("-"*60)
-
+    '''
     # "Commiteamos" (Cerramos la conexión)
     conn.commit()
     # Devolvemos código HTML para ser renderizado
@@ -152,14 +153,6 @@ def storage():
 
     return redirect(url_for('datos'))
     
-
-
-#pagina catalogo
-@app.route('/prueba.html')
-def prueba():
-    return render_template('prueba.html')
-
-
 if (__name__=="__main__"):
     app.run(debug=True)
 
